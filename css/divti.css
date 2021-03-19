@@ -1,0 +1,249 @@
+.mainBG{
+  background-image: url(../img/BG.png);
+  height: 100 vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#image-preview{
+  display:none;
+  width : 125px;
+  height : 125px;
+}
+
+
+.header {
+width: 100%;
+min-height: 70px;
+margin: auto;
+/* border:2px solid red; */
+box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.24);
+background-color: #fafafa;
+}
+
+
+.header .image {
+background-image: url(../img/divti_logo.png);
+background-size: contain;
+width: 50px;
+height: 50px;
+/* vertical-align: middle; */
+
+}
+
+.header .text {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: medium;
+}
+
+.header .image, 
+.header .text {
+display: inline-block;
+vertical-align: middle;
+margin: 2px;
+}
+
+.btn1{
+/* width: auto; */
+/* width: 332px; */
+min-width: 300px;
+height: auto;
+display: inline;
+margin: 0 0 0 60px;
+padding: 14px 30px 14px 30px;
+background-color: #588cc7;
+border: none;
+color: #fafafa;
+box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.15);
+font-size: 14px;
+
+
+
+}
+
+.btn1:hover{background-color: #7489a1; color: #fafafa;}
+
+/* .icon1{
+float: right;
+width: 332px;
+height: 78px;
+margin: 0 0 0 60px;
+padding: 24px 74px 14px 83px;
+src: url(img/search-face.svg) no-repeat;
+color: #fafafa;
+} */
+
+.shadow{
+  box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+.btn2{
+min-width: 300px;
+/* width: 332px; */
+height: auto;
+margin: 0 0 0 60px;
+padding: 14px 30px 14px 30px;
+background-color: #fafafa;
+border: none;
+color: #588cc7;
+box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.15);
+font-size: 14px;
+
+
+}
+
+.btn2:hover{background-color: #7489a1; color: #fafafa;}
+
+
+.btnWhite{
+  width: auto;
+  min-height: 30px;
+  margin: 20px 200px;
+  text-align: center;
+  padding: 5px;
+  background-color: #fafafa;
+  color: rgb(24, 24, 24);
+  border: none;
+  box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.15);
+
+  
+
+}
+
+.btnMain{
+  min-width: 40%;
+  min-height: 30px;
+  margin: 0 auto;
+  padding: 10px 15px 10px 15px;
+  background-color: #588cc7;
+  text-align: center;
+  vertical-align: middle;
+  /* display: block; */
+  border: none;
+  color: #fafafa;
+  box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.15);
+  }
+
+.btnBlock{
+    width: 80%;
+    /* min-height: 30px; */
+    padding: 10px 15px 10px 15px;
+    background-color: #588cc7;
+    text-align: center;
+    /* vertical-align: middle; */
+    border: none;
+    color: #fafafa;
+    font-size: 0.875 rem;
+    display: block;
+    margin: auto;
+    border-radius: 0%;
+    box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.15);
+    }
+
+/* button:disabled{
+  color: #fafafa;
+  background-color: darkgrey;
+} */
+
+/* .btnBlock:disabled{
+  color: #fafafa;
+  background-color: black;
+} */
+
+button:hover :active{
+  background-color: azure;
+  color:#588cc7;
+}
+
+
+.btnSecondary{
+      min-width: 40%;
+      min-height: 30px;
+      /* height: 42px; */
+      margin: 0 40px 0 0;
+      padding: 10px 15px 10px 15px;
+      background-color: #fafafa;
+      text-align: center;
+      border: none;
+      color: #588cc7;
+      box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.15);
+      }
+
+.mainContainer{
+  /* width: 98%;
+  min-height: 300px; */
+  margin: auto;
+  /* border:2px solid red; */
+  box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.24);
+  background-color: #fafafa;
+  padding: 40px;
+  }
+
+.innerContainer
+{
+margin: 10px auto;
+max-width: 700px;
+height: 100px;
+background-color: #588cc7;
+box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.24);
+}
+
+.innerContainerWhite
+{
+margin: 10px auto;
+max-width: 700px;
+height: auto;
+/* background-color: #362525; */
+/* box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.24); */
+}
+
+.textShadow{
+  margin: auto;
+  width: 70%;
+  border:none;
+  box-shadow: 4px 6px 22px 0 rgba(0, 0, 0, 0.24);
+  background-color: #fafafa;
+  padding: 16px;
+
+}
+
+.faceContainer{
+  width: 62%;
+  max-width: 460px;
+  margin: 0 auto; /* to center the container */
+}
+
+
+.containerimg {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  background-size: contain;
+}
+
+/* 
+.container img {
+  width: 100%;
+  height: auto;
+} */
+
+.imgTbl{
+  max-width: 5px; max-height: 5px;
+}
+
+.imgModal{
+  max-width: 100px;
+  max-width: 100px;
+  background-size: contain;
+  margin: 1px;}
+
+  .formLabel{
+    color: #545658;
+    font-size: 0.8rem;
+    font-weight: 200;
+  }

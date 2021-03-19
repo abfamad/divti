@@ -1,0 +1,220 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pencarian Wajah</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/divti.css">
+  
+
+</head>
+
+
+<body class="mainBG">
+    <!-- Just an image -->
+<nav class="navbar navbar-light bg-white header">
+  <a class="navbar-brand" href="#">
+    <img src="img/divti_logo.png" width="30" height="30" alt="">
+  </a>
+  <label class="nav-item">SISTEM PENCARIAN IDENTITAS DIVTI POLRI</label>
+  <div class="nav-item dropdown">
+      <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Profile
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Ubah Password</a>
+        <a class="dropdown-item" href="#">Keluar</a>
+      </div>
+  </div>
+
+</nav>
+
+<br>
+
+<div class="row">
+  <div class=" container col-6 col-md-4">
+    <div class="faceContainer">
+      <img class="containerimg" src="img/foto me.jpeg" >
+
+      <div class="" >
+        <button class="btn btn-primary btn-lg btn-block" onclick="aler()">Kembali</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col">
+    <div>
+      <label><b>HASIL PENCARIAN WAJAH</b></label>
+      <p style="font-size: 10px; font-weight: 400;">Indeks 10 wajah dengan nilai kemiripan tertinggi</p>
+    </div>
+
+    <div class=" container table-responsive-md">
+      <table id="outputTable" class="table table-bordered table-hover">
+        <thead>
+        <tr>
+          <th scope="face"> Foto</th>
+          <th scope="NIK"> NIK</th>
+          <th scope="face"> Nama Lengkap</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr id="data1" onclick="setModalData(this.id)" data-toggle="modal" data-target="#detailDataModal">
+          <td id="img1" class="imgTbl"> <img class="img-thumbnail" src="img/justin.jpeg"> </td>
+          <td id="nik1">114098714000847666</td>
+          <td id="nama1">Justin Timberlake</td>
+        </tr>
+        <tr id="data2" onclick="setModalData(this.id)" data-toggle="modal" data-target="#detailDataModal">
+          <td id="img1" class="imgTbl"> <img class="img-thumbnail" src="img/foto me.jpeg"> </td>
+          <td id="nik1">1140921516156</td>
+          <td id="nama1">Roronoa Zorro</td>
+        </tr>
+        
+      </tbody>
+
+      </table>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- modal -->
+
+<div class="modal fade" id="detailDataModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Detail Informasi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+      <div class="modal-body" id="modalData">
+        
+          <div class="" style="margin: 10px;">
+            <img id="modalImg" class="imgModal" src="" >
+            
+            <!-- <div><label id="modalMatchScore"></label> </div> -->
+            
+          </div>
+          <br>
+
+          <div style="margin: 10px;">
+
+          <form>
+            <div class="form-group">
+              <label class="formLabel">Skor</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalMatchScore" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="formLabel">NIK</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalNik" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label class="formLabel">Nama</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalName" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label class="formLabel">Tempat Lahir</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalBirthPlace" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label class="formLabel">Tanggal Lahir</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalBirthDate" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label class="formLabel">Jenis Kelamin</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalGender" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label class="formLabel">Golongan Darah</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalBlood" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label class="formLabel">Agama</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalReligion" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label class="formLabel">Status</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalMarriage" value="">
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label class="formLabel">Pekerjaan</label>
+              <div class="col">
+                <input type="text" readonly class="form-control-plaintext" id="modalOccupation" value="">
+              </div>
+            </div>
+   
+            </div>
+           
+          </form>
+
+        </div>
+      
+        </div>
+      
+      </div>
+
+      
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="bootstrap-min.js"></script>
+<script src="faceSearchOutput.js"></script>
+
+
+<style>
+
+
+</style>
+
+<script>
+
+
+</script>
+
+</body>
+</html

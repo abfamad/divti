@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pencarian NIK</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/divti.css">
+
+</head>
+
+
+<body class="mainBG" onload="setModalData()">
+    <!-- Just an image -->
+<nav class="navbar navbar-light bg-white header">
+  <a class="navbar-brand" href="#">
+    <img src="img/divti_logo.png" width="30" height="30" alt="">
+  </a>
+  <h5 class="" class="nav-item">SISTEM PENCARIAN IDENTITAS DIVTI POLRI</h5>
+  <div class="nav-item dropdown-header">
+      <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Profile
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Ubah Password</a>
+        <a class="dropdown-item" href="#">Keluar</a>
+      </div>
+  </div>
+
+</nav>
+
+<br>
+
+<div class="container mainContainer">
+<div class="row">
+  <div class=" container col-6 col-md-4">
+    <div class="faceContainer">
+      <img id="modalImg" class="containerimg" src="" >
+
+      <div class="" >
+        <button class="btn btn-primary btn-lg btn-block" onclick="">Kembali</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col">
+    <div>
+      <label><b>HASIL PENCARIAN NIK</b></label>
+    </div>
+
+    <form>
+        <div class="form-group">
+          <label class="formLabel">NIK</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalNik" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label class="formLabel">Nama</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalName" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label class="formLabel">Tempat Lahir</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalBirthPlace" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label class="formLabel">Tanggal Lahir</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalBirthDate" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label class="formLabel">Jenis Kelamin</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalGender" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label class="formLabel">Golongan Darah</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalBlood" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label class="formLabel">Agama</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalReligion" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label class="formLabel">Status</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalMarriage" value="">
+          </div>
+        </div>
+
+        <div class="form-group">
+        <label class="formLabel">Pekerjaan</label>
+          <div class="col">
+            <input type="text" readonly class="form-control-plaintext" id="modalOccupation" value="">
+          </div>
+        </div>
+
+        </div>
+       
+      </form>
+
+  </div>
+
+
+
+</div>
+</div>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="bootstrap-min.js"></script>
+<script src="nikSearchOutput.js"></script>
+
+</body>
+</html

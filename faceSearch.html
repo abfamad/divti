@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pencarian Wajah</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <!-- <link rel="stylesheet" href="bootstrap-min.css"> -->
+  <link rel="stylesheet" href="bootstrap-min.js">
+  <link rel="stylesheet" href="css/bootstrap-min.css">
+  <link rel="stylesheet" href="css/divti.css">
+  
+
+</head>
+
+
+<body class="mainBG">
+    <!-- Just an image -->
+
+<nav class="navbar navbar-light bg-white header">
+    <a class="navbar-brand" href="#">
+      <img src="img/divti_logo.png" width="30" height="30" alt="">
+    </a>
+    <label class="nav-item">SISTEM PENCARIAN IDENTITAS DIVTI POLRI</label>
+    <div class="nav-item dropdown">
+        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+
+</nav>
+
+
+<br>
+
+<div class="container">
+    <button class="btn1 ">Pencarian Wajah</button>
+    <button class="btn2 ">Pencarian Nama</button>
+    <button class="btn2 ">Pencarian NIK</button>
+</div>
+
+<br>
+
+<div class="container mainContainer">
+    <div class="innerContainer">
+        <!-- <label>Upload Your File </label> -->
+        <img id="image-preview" alt="image preview"/>
+        <input id="image-source" type="file" class="btnWhite" onchange="previewImage()"></input>
+    </div>
+
+    <br>
+
+    <div class="container" style="text-align: center;">
+     
+      <label class="btn">
+        <input type="radio" name="gender" id="man"> Pria
+      </label>
+
+      <label class="btn">
+        <input type="radio" name="gender" id="woman" > Wanita
+      </label>
+    </div>
+
+    <br>
+
+    <div class="innerContainerWhite" style="display: flex; justify-content: center;">
+      <button id="changePic" class="btnSecondary">Ganti Foto</button>
+      <!-- <button class="btnSecondary">Ganti Foto</button> -->
+      <button id="searchPic" class="btnMain">Cari</button>
+      
+    </div>
+    
+
+</div>
+
+<style>
+
+
+</style>
+
+<script>
+  function previewImage() {
+    document.getElementById("image-preview").style.display = "block";
+    var oFReader = new FileReader();
+     oFReader.readAsDataURL(document.getElementById("image-source").files[0]);
+
+    oFReader.onload = function(oFREvent) {
+      document.getElementById("image-preview").src = oFREvent.target.result;
+    };
+  };
+</script>
+
+</body>
+</html
